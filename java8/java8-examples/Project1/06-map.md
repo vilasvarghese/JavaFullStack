@@ -94,5 +94,3 @@ public static <T, U> Map<T, U> createMap(SimpleEntry<T, U>... entries) {
     return Stream.of(entries).collect(toMap(SimpleEntry::getKey, SimpleEntry::getValue));
 }
 ```
-
-[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/shekhargulati/java8-the-missing-tutorial/06-map)](https://github.com/igrigorik/ga-beacon)

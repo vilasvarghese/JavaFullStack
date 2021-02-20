@@ -609,5 +609,3 @@ Arrays.stream(urls).parallel().map(url -> getUrlContent(url)).forEach(System.out
 If you need to understand when to use a Parallel Stream, I recommend reading
 this article by Doug Lea et al. [http://gee.cs.oswego.edu/dl/html/StreamParallelGuidance.html](http://gee.cs.oswego.edu/dl/html/StreamParallelGuidance.html).
 
-
-

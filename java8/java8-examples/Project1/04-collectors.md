@@ -406,5 +406,3 @@ public static void wordCount(Path path) throws IOException {
     wordCount.forEach((k, v) -> System.out.println(String.format("%s ==>> %d", k, v)));
 }
 ```
-
-[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/shekhargulati/java8-the-missing-tutorial/04-collectors)](https://github.com/igrigorik/ga-beacon)

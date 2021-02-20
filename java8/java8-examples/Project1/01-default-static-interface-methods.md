@@ -295,5 +295,3 @@ class App implements B, A {
 }
 ```
 This will print `inside B`.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/vilas/java8-the-missing-tutorial/01-default-static-interface-methods)](https://github.com/igrigorik/ga-beacon)
