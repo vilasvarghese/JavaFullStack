@@ -283,7 +283,7 @@ The second step is to convert the body of the lambda expression into a method
 that will be invoked through the `invokedynamic` instruction. This is the step
 where JVM implementers have the liberty to choose their own strategy.
 
-I have only glossed over this topic. You can read about the internals at
+Further reference:
 http://cr.openjdk.java.net/~briangoetz/lambda/lambda-translation.html.
 
 ## Anonymous classes vs lambdas
@@ -551,5 +551,3 @@ interface TaskExtractor<R> extends Function<Task, R> {
     }
 }
 ```
-
-[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/shekhargulati/java8-the-missing-tutorial/02-lambdas)](https://github.com/igrigorik/ga-beacon)
