@@ -15,7 +15,7 @@ Most of the programming languages like C, C++, C#, Java, Scala, etc. have a null
 
 Let's look at the example Task management domain classes shown below. Our domain model is very simple with only two classes -- Task and User. A task can be assigned to a user.
 
-> Code for this section is inside [ch05 package](https://github.com/shekhargulati/java8-the-missing-tutorial/tree/master/code/src/main/java/com/shekhargulati/java8_tutorial/ch05).
+> Code for this section is inside [ch05 package](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/java8-examples/Project1/code/src/main/java/com/vilas/java8_tutorial/ch05).
 
 ```java
 public class Task {

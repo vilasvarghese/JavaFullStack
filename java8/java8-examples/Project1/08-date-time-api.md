@@ -1,7 +1,7 @@
 Date Time API [![TimeToRead](http://ttr.myapis.xyz/ttr.svg?pageUrl=https://github.com/shekhargulati/java8-the-missing-tutorial/blob/master/08-date-time-api.md)](http://ttr.myapis.xyz/)
 -------
 
-So far in this [book](https://github.com/shekhargulati/java8-the-missing-tutorial)
+So far in this [book](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/java8-examples/Project1/code/src/main/java/com/vilas/java8_tutorial)
 we have focussed on [functional](./02-lambdas.md) [aspects](03-streams.md) of
 Java 8 and looked at how to design better API's using [Optional](05-optionals.md)
 and [default and static methods in Interfaces](./01-default-static-interface-methods.md).

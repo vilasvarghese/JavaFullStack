@@ -13,7 +13,7 @@ effective APIs for your libraries and applications.
 
 
 
-> Code for this section is inside [ch01 package](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/tree/master/code/src/main/java/com/vilas/java8_tutorial/ch01).
+> Code for this section is inside [ch01 package](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/java8-examples/Project1/code/src/main/java/com/vilas/java8_tutorial/ch01).
 
 If you have designed any API then with time you would have felt the need to add
 new methods to the API. Once an API is published, it becomes difficult to add

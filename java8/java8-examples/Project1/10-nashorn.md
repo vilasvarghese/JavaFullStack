@@ -1,5 +1,4 @@
-Nashorn: Run JavaScript on the JVM [![TimeToRead](http://ttr.myapis.xyz/ttr.svg?pageUrl=https://github.com/shekhargulati/java8-the-missing-tutorial/blob/master/10-nashorn.md)](http://ttr.myapis.xyz/)
------
+Nashorn: Run JavaScript on the JVM [![TimeToRead]-----
 
 ![Nashorn](https://upload.wikimedia.org/wikipedia/commons/7/7a/Dortmunder_Nashorn_-_Hell_wieherte_der_Hippogryph.jpg)
 
@@ -95,11 +94,11 @@ inside the `jjs` shell, you can create an instance of HashMap as shown below.
 ```bash
 jjs> var HashMap = Java.type("java.util.HashMap")
 jjs> var userAndAge = new HashMap()
-jjs> userAndAge.put("shekhar",32)
+jjs> userAndAge.put("vilas",32)
 null
 jjs> userAndAge.put("rahul",33)
 null
-jjs> userAndAge.get("shekhar")
+jjs> userAndAge.get("vilas")
 32
 ```
 
@@ -120,7 +119,7 @@ You can access values by either calling the `get` method or using the `[]`
 notation as shown below.
 
 ```bash
-jjs> userAndAge["shekhar"]
+jjs> userAndAge["vilas"]
 32
 ```
 
@@ -130,14 +129,14 @@ will write code as shown below.
 ```bash
 jjs> var List = Java.type("java.util.ArrayList")
 jjs> var names = new List()
-jjs> names.add("shekhar")
+jjs> names.add("vilas")
 true
 jjs> names.add("rahul")
 true
 jjs> names.add("sameer")
 true
 jjs> names.get(0)
-shekhar
+vilas
 jjs> names[1]
 rahul
 ```
@@ -161,7 +160,7 @@ jjs> var Collections = Java.type("java.util.Collections")
 jjs>
 jjs> Collections.sort(names)
 jjs> names
-[rahul, sameer, shekhar]
+[rahul, sameer, vilas]
 jjs>
 ```
 
@@ -206,7 +205,7 @@ hello,hey
 
 ```bash
 jjs> $ENV["HOME"]
-/Users/shekhargulati
+/Users/vilas
 
 jjs> $ENV.JAVA_HOME
 /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
@@ -216,7 +215,7 @@ jjs> $ENV.JAVA_HOME
 
 ```bash
 jjs> $EXEC("pwd")
-/Users/shekhargulati/java8-the-missing-tutorial
+/Users/vilas/java8-the-missing-tutorial
 ```
 
 ### Writing executable scripts
@@ -294,9 +293,9 @@ in Java has `forEach` method that accepts a consumer. Consumer is an interface
 with one method. In Java, you can write following:
 
 ```java
-Arrays.asList("shekhar","rahul","sameer").forEach(name -> System.out.println(name));
+Arrays.asList("vilas","rahul","sameer").forEach(name -> System.out.println(name));
 
-// shekhar
+// vilas
 // rahul
 // sameer
 ```
@@ -306,11 +305,11 @@ instead as shown below.
 
 ```javascript
 jjs> var Arrays = Java.type("java.util.Arrays")
-jjs> Arrays.asList("shekhar","rahul","sameer")
-[shekhar, rahul, sameer]
-jjs> var names = Arrays.asList("shekhar","rahul","sameer")
+jjs> Arrays.asList("vilas","rahul","sameer")
+[vilas, rahul, sameer]
+jjs> var names = Arrays.asList("vilas","rahul","sameer")
 jjs> names.forEach(function(name){print(name);})
-shekhar
+vilas
 rahul
 sameer
 ```
@@ -322,7 +321,7 @@ jjs> names
     .stream().filter(function(name){return name.startsWith("s");})
     .forEach(function(name){print(name);})
 
-shekhar
+vilas
 sameer
 ```
 
@@ -385,4 +384,4 @@ Caused by: java.lang.ClassNotFoundException: java.util.HashMap
 ```
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/shekhargulati/java8-the-missing-tutorial/10-nashorn)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/vilas/java8-the-missing-tutorial/10-nashorn)](https://github.com/igrigorik/ga-beacon)

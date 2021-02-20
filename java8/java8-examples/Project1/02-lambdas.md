@@ -1,4 +1,4 @@
-Lambdas [![TimeToRead](http://ttr.myapis.xyz/ttr.svg?pageUrl=https://github.com/shekhargulati/java8-the-missing-tutorial/blob/master/02-lambdas.md)](http://ttr.myapis.xyz/)
+Lambdas [![TimeToRead]
 -----
 
 One of the most important features in Java 8 is the introduction of Lambda
@@ -23,7 +23,7 @@ programming language needs to support higher order functions. Higher order
 functions are functions that either accept other functions as arguments or
 returns a function as a result.
 
-> Code for this section is inside [ch02 package](https://github.com/shekhargulati/java8-the-missing-tutorial/tree/master/code/src/main/java/com/shekhargulati/java8_tutorial/ch02).
+> Code for this section is inside [ch02 package](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/java8-examples/Project1/code/src/main/java/com/vilas/java8_tutorial/ch02).
 
 Now, with the introduction of Lambda expressions in Java 8, Java supports higher
 order functions. Let us look at the  canonical example of Lambda expression -- a

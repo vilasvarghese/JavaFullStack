@@ -7,7 +7,7 @@ These are:
 1. Repeatable annotations
 2. Type annotations
 
-> Code for this section is inside [ch12 package](https://github.com/shekhargulati/java8-the-missing-tutorial/tree/master/code/src/main/java/com/shekhargulati/java8_tutorial/ch12).
+> Code for this section is inside [ch12 package](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/java8-examples/Project1/code/src/main/java/com/vilas/java8_tutorial/ch12).
 
 ## Repeatable annotations
 

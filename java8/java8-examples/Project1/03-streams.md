@@ -17,7 +17,7 @@ do rather than how it should be done. In this chapter, we will discuss the need
 for a new data processing API, the difference between `Collection` and `Stream`,
 and how to use the Stream API in your applications.
 
-> Code for this section is inside [ch03 package](https://github.com/shekhargulati/java8-the-missing-tutorial/tree/master/code/src/main/java/com/shekhargulati/java8_tutorial/ch03).
+> Code for this section is inside [ch03 package](https://github.com/vilasvarghese/JavaFullStack/tree/master/java8/java8-examples/Project1/code/src/main/java/com/vilas/java8_tutorial/ch03).
 
 ## Why we need a new data processing abstraction
 
@@ -610,4 +610,4 @@ If you need to understand when to use a Parallel Stream, I recommend reading
 this article by Doug Lea et al. [http://gee.cs.oswego.edu/dl/html/StreamParallelGuidance.html](http://gee.cs.oswego.edu/dl/html/StreamParallelGuidance.html).
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-59411913-3/shekhargulati/java8-the-missing-tutorial/03-streams)](https://github.com/igrigorik/ga-beacon)
+
