@@ -3,20 +3,20 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="country1" class="com.srikanth.fullstackjava.Country">
+	<bean id="country1" class="com.vilas.fullstackjava.Country">
 		<property name="countryId" value="C001"></property>
 		<property name="countryName" value="Country1"></property>
 	</bean>
 
-	<bean id="country2" class="com.srikanth.fullstackjava.Country">
+	<bean id="country2" class="com.vilas.fullstackjava.Country">
 		<property name="countryId" value="C002"></property>
 		<property name="countryName" value="Country2"></property>
 	</bean>
 
-	<bean id="player" class="com.srikanth.fullstackjava.Player" scope="prototype">
+	<bean id="player" class="com.vilas.fullstackjava.Player" scope="prototype">
 		<property name="country" ref="country"></property>
 	</bean>
 
-	<bean id="country" class="com.srikanth.fullstackjava.Country"></bean>
+	<bean id="country" class="com.vilas.fullstackjava.Country"></bean>
 
 </beans>

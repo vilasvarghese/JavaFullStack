@@ -19,7 +19,7 @@ javascript', 'jenkins, cloud', 'hyderabad', 'b3', 6, 20, 'nt14560@gmail.com', 96
 
 insert into profile_details(profile_id, user_id, first_name, last_name, skill_set, location, dob, 
 qualification, experience, gender, phone_number, email_id) 
-values (1, 'sr20000959', 'srikanth', 'naidu', 'java', 'bangalore', '15/06/1989', 'b.tech', 6, 
+values (1, 'sr20000959', 'vilas', 'naidu', 'java', 'bangalore', '15/06/1989', 'b.tech', 6, 
 'Male', '9959656462', 'sr20000959@gmail.com');
 insert into profile_details(profile_id, user_id, first_name, last_name, skill_set, location, dob, 
 qualification, experience, gender, phone_number, email_id) 

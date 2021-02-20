@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.srikanth.fullstackjava" })
+@ComponentScan(basePackages = { "com.vilas.fullstackjava" })
 public class WebConfig extends WebMvcConfigurerAdapter {
 	@Bean
 	public InternalResourceViewResolver resolver() {

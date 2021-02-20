@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import java.util.Date;
 import java.util.logging.Logger;
@@ -14,13 +14,13 @@ public class LoggingAspect {
 
 	static Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
-	@After(value="execution(* com.srikanth.fullstackjava.Student.getAllDetails(..))||execution(* com.srikanth.fullstackjava.Student.getStudentDetails(..))", argNames = "joinPoint")
+	@After(value="execution(* com.vilas.fullstackjava.Student.getAllDetails(..))||execution(* com.vilas.fullstackjava.Student.getStudentDetails(..))", argNames = "joinPoint")
 	public void LoggingAdvice(JoinPoint joinPoint) {
 		logger.info("Method Name: " + joinPoint.getSignature().toShortString()+" Time: "+new Date());
 
 	}
 
-	@Around("execution(* com.srikanth.fullstackjava.Student.getAllDetails(..))||execution(* com.srikanth.fullstackjava.Student.getStudentDetails(..))")
+	@Around("execution(* com.vilas.fullstackjava.Student.getAllDetails(..))||execution(* com.vilas.fullstackjava.Student.getStudentDetails(..))")
 	public Object profile(ProceedingJoinPoint pjp) throws Throwable {
 		long start = System.currentTimeMillis();
 		Object output = pjp.proceed();

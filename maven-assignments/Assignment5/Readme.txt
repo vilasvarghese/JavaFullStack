@@ -1,6 +1,6 @@
 1. Creating webapp:
 
-From command line: mvn archetype:generate -DgroupId=com.srikanth.fullstackjava -DartifactId=assignment5 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+From command line: mvn archetype:generate -DgroupId=com.vilas.fullstackjava -DartifactId=assignment5 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 (or)
 
@@ -69,7 +69,7 @@ From Eclipse: Create new maven project: New->MavenProject-> select artidfactID a
 
 3. Build the project:
 
-go to directory srikanth2 and run the command
+go to directory vilas2 and run the command
 
 mvn test -Pdev
 

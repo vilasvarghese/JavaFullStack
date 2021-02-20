@@ -7,11 +7,11 @@
    http://www.springframework.org/schema/aop 
    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
 
-	<bean id="student" class="com.srikanth.fullstackjava.Student"
+	<bean id="student" class="com.vilas.fullstackjava.Student"
 		scope="prototype"></bean>
 
 	<aop:aspectj-autoproxy />
-	<bean id="LoggingAspect" class="com.srikanth.fullstackjava.LoggingAspect"></bean>
+	<bean id="LoggingAspect" class="com.vilas.fullstackjava.LoggingAspect"></bean>
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -36,7 +36,7 @@
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>com.srikanth.fullstackjava.Student</value>
+				<value>com.vilas.fullstackjava.Student</value>
 			</list>
 		</property>
 	</bean>
@@ -52,7 +52,7 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
-	<bean id="studentDao" class="com.srikanth.fullstackjava.StudentDao">
+	<bean id="studentDao" class="com.vilas.fullstackjava.StudentDao">
 		<property name="hibernateTemplate" ref="hibernateTemplate" />
 	</bean>
 

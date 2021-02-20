@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 public class Test {
 

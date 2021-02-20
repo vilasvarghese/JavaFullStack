@@ -1,0 +1,10 @@
+A company pays it's employees on a weekly basis
+There are 2 types of employees
+	1. Salaried employees
+		Paid x salary irrespect of the hours worked.
+	2. Hourly employees
+		Paid as per hour and receive a commission for the overtime they worked
+	
+	Calculate the salary for each employee.
+	Calculate the total salary that needs to be paid
+	Prepare the budget for the company.

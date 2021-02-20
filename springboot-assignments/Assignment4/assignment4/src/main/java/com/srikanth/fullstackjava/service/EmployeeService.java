@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.service;
+package com.vilas.fullstackjava.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.srikanth.fullstackjava.model.Employee;
-import com.srikanth.fullstackjava.repository.EmployeeRepository;
+import com.vilas.fullstackjava.model.Employee;
+import com.vilas.fullstackjava.repository.EmployeeRepository;
 
 @Service
 public class EmployeeService {

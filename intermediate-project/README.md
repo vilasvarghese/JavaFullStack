@@ -3,7 +3,7 @@ Intermediate Project for Java Full Stack Developer:
 
 ## Application Name: Online Employee Profile Updation
 
-- Srikanth Sambirli
+- vilas 
 - Java Full Stack Developer
 - Bangalore, India
 

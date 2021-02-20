@@ -5,7 +5,7 @@ insert into user_login_details (user_id, password) values ('10003', 'hello');
 
 /* user_profile_details */
 insert into user_profile_details (user_id, first_name, last_name, dob, gender, city, phone_number, email_id)
-values ('10001', 'Srikanth', 'Naidu', '15-06-1989', 'Male', 'Bangalore', '9959656462', 'sr20000959@gmail.com');
+values ('10001', 'vilas', 'Naidu', '15-06-1989', 'Male', 'Bangalore', '9959656462', 'sr20000959@gmail.com');
 insert into user_profile_details (user_id, first_name, last_name, dob, gender, city, phone_number, email_id)
 values ('10002', 'Kiran', 'Chowdary', '1-10-1993', 'Male', 'Chittoor', '9456783656', 'kr645646@gmail.com');
 insert into user_profile_details (user_id, first_name, last_name, dob, gender, city, phone_number, email_id)

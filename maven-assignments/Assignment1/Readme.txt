@@ -1,7 +1,7 @@
 creating project:
 -----------------
 
-mvn archetype:generate -DgroupId=com.srikanth.fullstackjava -DartifactId=assignment1 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.vilas.fullstackjava -DartifactId=assignment1 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 building project:
 -----------------
@@ -19,7 +19,7 @@ go to directory basicMaven
 
 Run command - 
 
-mvn exec:java -D"exec.mainClass"="com.srikanth.fullstackjava.App"
+mvn exec:java -D"exec.mainClass"="com.vilas.fullstackjava.App"
 
 testing project:
 ---------------

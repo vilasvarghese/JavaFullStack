@@ -15,6 +15,6 @@
 	<classpathentry kind="lib" path="C:/Users/Revathi/.m2/repository/org/springframework/spring-orm/5.0.6.RELEASE/spring-orm-5.0.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Revathi/.m2/repository/org/springframework/spring-jdbc/5.0.6.RELEASE/spring-jdbc-5.0.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Revathi/.m2/repository/org/springframework/spring-tx/5.0.6.RELEASE/spring-tx-5.0.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Srikanth/Study/Study Materials/hibernate jars/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="C:/vilas/Study/Study Materials/hibernate jars/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

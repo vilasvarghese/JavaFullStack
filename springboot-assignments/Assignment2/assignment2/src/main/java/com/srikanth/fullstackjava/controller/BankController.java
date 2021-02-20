@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.controller;
+package com.vilas.fullstackjava.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

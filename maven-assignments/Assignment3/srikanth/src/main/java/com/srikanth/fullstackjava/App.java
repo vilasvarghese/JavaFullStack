@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,7 +17,7 @@ public class App
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/myspring", "root", "root");
 			Statement stmt = con.createStatement();  
-			stmt.executeUpdate("insert into student values(4, 'srikanth', 'Bangalre')");
+			stmt.executeUpdate("insert into student values(4, 'vilas', 'Bangalre')");
 			ResultSet rs = stmt.executeQuery("select * from student"); 
 			while(rs.next()) {
 				System.out.println(rs.getInt(1)+ "  " +rs.getString(2)+ "  " +rs.getString(3));  

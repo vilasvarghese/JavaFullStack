@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.repository;
+package com.vilas.fullstackjava.repository;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.srikanth.fullstackjava.model.CD;
+import com.vilas.fullstackjava.model.CD;
 
 @Repository
 public interface CDRepository extends JpaRepository<CD, Long> {

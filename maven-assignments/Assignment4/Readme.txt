@@ -1,6 +1,6 @@
 1. Creating webapp:
 
-From command line: mvn archetype:generate -DgroupId=com.srikanth.fullstackjava -DartifactId=assignment4 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+From command line: mvn archetype:generate -DgroupId=com.vilas.fullstackjava -DartifactId=assignment4 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 (or)
 
@@ -8,7 +8,7 @@ From Eclipse: Create new maven project: New->MavenProject-> select artidfactID a
 
 2. Building App:
 
-go to directory srikanth1 and run the command
+go to directory vilas1 and run the command
 
 mvn clean package
 

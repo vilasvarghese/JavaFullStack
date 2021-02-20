@@ -7,9 +7,9 @@
    http://www.springframework.org/schema/aop 
    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
    
-<bean id="student" class="com.srikanth.fullstackjava.Student" scope="prototype"></bean>
+<bean id="student" class="com.vilas.fullstackjava.Student" scope="prototype"></bean>
 
  <aop:aspectj-autoproxy/>
-<bean id="LoggingAspect" class="com.srikanth.fullstackjava.LoggingAspect"></bean>
+<bean id="LoggingAspect" class="com.vilas.fullstackjava.LoggingAspect"></bean>
 </beans>
 

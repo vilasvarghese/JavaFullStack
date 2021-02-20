@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.service;
+package com.vilas.fullstackjava.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.core.types.dsl.NumberExpression;
 import com.querydsl.core.types.dsl.StringExpression;
-import com.srikanth.fullstackjava.model.CD;
-import com.srikanth.fullstackjava.model.QCD;
-import com.srikanth.fullstackjava.repository.CDRepository;
+import com.vilas.fullstackjava.model.CD;
+import com.vilas.fullstackjava.repository.CDRepository;
+import com.vilas.fullstackjava.model.QCD;
 
 @Service
 public class CDService {

@@ -1,5 +1,5 @@
-2018-05-17 14:02:33.831  INFO 24160 --- [  restartedMain] com.wipro.srikanth.SpringStarterApp      : Starting SpringStarterApp on TG-Sprint-VDI24 with PID 24160 (/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes started by osgdev in /home/osgdev/Desktop/sr20000959/sprdata/springdata8)
-2018-05-17 14:02:33.831  INFO 24160 --- [  restartedMain] com.wipro.srikanth.SpringStarterApp      : No active profile set, falling back to default profiles: default
+2018-05-17 14:02:33.831  INFO 24160 --- [  restartedMain] com.wipro.vilas.SpringStarterApp      : Starting SpringStarterApp on TG-Sprint-VDI24 with PID 24160 (/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes started by osgdev in /home/osgdev/Desktop/sr20000959/sprdata/springdata8)
+2018-05-17 14:02:33.831  INFO 24160 --- [  restartedMain] com.wipro.vilas.SpringStarterApp      : No active profile set, falling back to default profiles: default
 2018-05-17 14:02:33.851  INFO 24160 --- [  restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@193c63a0: startup date [Thu May 17 14:02:33 IST 2018]; root of context hierarchy
 2018-05-17 14:02:34.875  INFO 24160 --- [  restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 2018-05-17 14:02:34.935  INFO 24160 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a146589] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -24,8 +24,8 @@ Hibernate: drop table if exists employee
 Hibernate: create table employee (emp_id bigint not null, emp_doj datetime, emp_name varchar(255), emp_salary double precision, emp_type varchar(255), primary key (emp_id)) engine=MyISAM
 2018-05-17 14:02:36.180  INFO 24160 --- [  restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3c7c2b90'
 2018-05-17 14:02:36.181  INFO 24160 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-05-17 14:02:36.197  WARN 24160 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes/com/wipro/srikanth/service/EmployeeService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.srikanth.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.wipro.srikanth.model.QEmployee cannot be resolved
+2018-05-17 14:02:36.197  WARN 24160 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes/com/wipro/vilas/service/EmployeeService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.vilas.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.wipro.vilas.model.QEmployee cannot be resolved
 	QEmployee cannot be resolved to a type
 	QEmployee cannot be resolved to a variable
 	QEmployee cannot be resolved to a type
@@ -40,8 +40,8 @@ Hibernate: create table employee (emp_id bigint not null, emp_doj datetime, emp_
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2018-05-17 14:02:36.256 ERROR 24160 --- [  restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes/com/wipro/srikanth/service/EmployeeService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.srikanth.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.wipro.srikanth.model.QEmployee cannot be resolved
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes/com/wipro/vilas/service/EmployeeService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.vilas.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.wipro.vilas.model.QEmployee cannot be resolved
 	QEmployee cannot be resolved to a type
 	QEmployee cannot be resolved to a variable
 	QEmployee cannot be resolved to a type
@@ -67,14 +67,14 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
-	at com.wipro.srikanth.SpringStarterApp.main(SpringStarterApp.java:10) [classes/:na]
+	at com.wipro.vilas.SpringStarterApp.main(SpringStarterApp.java:10) [classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45-internal]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45-internal]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45-internal]
 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45-internal]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.2.RELEASE.jar:2.0.2.RELEASE]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes/com/wipro/srikanth/service/EmployeeService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.srikanth.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.wipro.srikanth.model.QEmployee cannot be resolved
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [/home/osgdev/Desktop/sr20000959/sprdata/springdata8/target/classes/com/wipro/vilas/service/EmployeeService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.vilas.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.wipro.vilas.model.QEmployee cannot be resolved
 	QEmployee cannot be resolved to a type
 	QEmployee cannot be resolved to a variable
 	QEmployee cannot be resolved to a type
@@ -94,8 +94,8 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
 	... 25 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.srikanth.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.wipro.srikanth.model.QEmployee cannot be resolved
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wipro.vilas.service.EmployeeService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.wipro.vilas.model.QEmployee cannot be resolved
 	QEmployee cannot be resolved to a type
 	QEmployee cannot be resolved to a variable
 	QEmployee cannot be resolved to a type
@@ -106,13 +106,13 @@ Caused by: org.springframework.beans.BeanInstantiationException: Failed to insta
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
 	... 37 common frames omitted
 Caused by: java.lang.Error: Unresolved compilation problems: 
-	The import com.wipro.srikanth.model.QEmployee cannot be resolved
+	The import com.wipro.vilas.model.QEmployee cannot be resolved
 	QEmployee cannot be resolved to a type
 	QEmployee cannot be resolved to a variable
 	QEmployee cannot be resolved to a type
 	QEmployee cannot be resolved to a variable
 
-	at com.wipro.srikanth.service.EmployeeService.<init>(EmployeeService.java:15) ~[classes/:na]
+	at com.wipro.vilas.service.EmployeeService.<init>(EmployeeService.java:15) ~[classes/:na]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_45-internal]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_45-internal]
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_45-internal]

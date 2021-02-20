@@ -21,7 +21,7 @@
 		</dependency>
 
 	<build>
-		<finalName>srikanth</finalName>
+		<finalName>vilas</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -43,7 +43,7 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<manifestEntries>
-										<Main-Class>com.srikanth.fullstackjava.App</Main-Class>
+										<Main-Class>com.vilas.fullstackjava.App</Main-Class>
 										<Build-Number>1.0</Build-Number>
 									</manifestEntries>
 								</transformer>
@@ -58,19 +58,19 @@
 
 3. Build project:
 
-Open terminal and got to directory srikanth and run the command
+Open terminal and got to directory vilas and run the command
 
 mvn clean package
 
 4. Running project:
 
-go to directory srikanth and run command
+go to directory vilas and run command
 
-mvn exec:java -D"exec.mainClass"="com.srikanth.fullstackjava.App"
+mvn exec:java -D"exec.mainClass"="com.vilas.fullstackjava.App"
 
 5. Testing project:
 
-go to directory srikanth and run command
+go to directory vilas and run command
 
 mvn test
 

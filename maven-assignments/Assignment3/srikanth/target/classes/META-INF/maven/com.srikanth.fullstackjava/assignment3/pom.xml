@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.srikanth.fullstackjava</groupId>
+	<groupId>com.vilas.fullstackjava</groupId>
 	<artifactId>assignment3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -62,7 +62,7 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<manifestEntries>
-										<Main-Class>com.srikanth.fullstackjava.App</Main-Class>
+										<Main-Class>com.vilas.fullstackjava.App</Main-Class>
 										<Build-Number>1.0</Build-Number>
 									</manifestEntries>
 								</transformer>

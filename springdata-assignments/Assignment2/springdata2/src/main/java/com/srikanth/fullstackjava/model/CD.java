@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.model;
+package com.vilas.fullstackjava.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.controller;
+package com.vilas.fullstackjava.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.srikanth.fullstackjava.model.Employee;
-import com.srikanth.fullstackjava.service.EmployeeService;
+import com.viilas.fullstackjava.service.EmployeeService;
+import com.vilas.fullstackjava.model.Employee;
 
 @Controller
 public class EmployeeController {

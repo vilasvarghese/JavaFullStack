@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.model;
+package com.vilas.fullstackjava.model;
 
 public class Employee {
 

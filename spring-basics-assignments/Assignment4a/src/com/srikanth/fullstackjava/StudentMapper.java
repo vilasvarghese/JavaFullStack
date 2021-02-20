@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

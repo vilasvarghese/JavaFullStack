@@ -9,7 +9,7 @@ public class StringCount {
 
 	public static void main(String []args){
 		List<String> list = new ArrayList<String>();
-		list.add("Srikanth");
+		list.add("vilas");
 		list.add("Hemanth");
 		list.add("Irfan");
 		list.add("Charan");

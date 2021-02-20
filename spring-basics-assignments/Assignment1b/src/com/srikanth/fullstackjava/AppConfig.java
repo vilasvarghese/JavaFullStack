@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

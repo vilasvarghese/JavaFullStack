@@ -1,11 +1,11 @@
-package com.srikanth.fullstackjava.data;
+package com.vilas.fullstackjava.data;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
-import com.srikanth.fullstackjava.model.Employee;
+import com.vilas.fullstackjava.model.Employee;
 
 @Repository
 public class EmployeeData {
@@ -13,7 +13,7 @@ public class EmployeeData {
 	private	Map <String, Employee> map = new HashMap<String, Employee>();
 
 	public EmployeeData() {
-		map.put("E001", new Employee("Srikanth", "srikanth@gmail.com", "Banglore"));
+		map.put("E001", new Employee("vilas", "vilas@gmail.com", "Banglore"));
 		map.put("E002", new Employee("Kiran", "kiran@gmail.com", "Chittoor"));
 		map.put("E003", new Employee("Rahul", "rahul@gmail.com", "Hyderabad"));
 	}

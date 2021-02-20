@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

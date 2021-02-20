@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava.controller;
+package com.vilas.fullstackjava.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.srikanth.fullstackjava.model.CD;
-import com.srikanth.fullstackjava.service.CDService;
+import com.vilas.fullstackjava.model.CD;
+import com.vilas.fullstackjava.service.CDService;
 
 @Controller
 public class CDController {

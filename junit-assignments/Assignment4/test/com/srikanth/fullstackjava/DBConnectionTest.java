@@ -1,4 +1,4 @@
-package com.srikanth.fullstackjava;
+package com.vilas.fullstackjava;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.srikanth.fullstackjava.DBConnection;
+import com.vilas.fullstackjava.DBConnection;
 
 public class DBConnectionTest {
 	private String drivername;
