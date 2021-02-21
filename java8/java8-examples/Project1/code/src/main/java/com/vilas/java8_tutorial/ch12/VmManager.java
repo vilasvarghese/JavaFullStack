@@ -1,4 +1,4 @@
-package com.shekhargulati.java8_tutorial.ch12;
+package main.java.com.vilas.java8_tutorial.ch12;
 
 import java.util.stream.Stream;
 

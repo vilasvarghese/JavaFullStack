@@ -1,4 +1,4 @@
-package com.shekhargulati.java8_tutorial.domain;
+package main.java.com.vilas.java8_tutorial.domain;
 
 import java.time.LocalDate;
 import java.util.*;

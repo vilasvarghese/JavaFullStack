@@ -1,7 +1,7 @@
-package com.shekhargulati.java8_tutorial.ch03;
+package main.java.com.vilas.java8_tutorial.ch03;
 
-import com.shekhargulati.java8_tutorial.domain.Task;
-import com.shekhargulati.java8_tutorial.domain.TaskType;
+import main.java.com.vilas.java8_tutorial.domain.Task;
+import main.java.com.vilas.java8_tutorial.domain.TaskType;
 
 import java.util.List;
 

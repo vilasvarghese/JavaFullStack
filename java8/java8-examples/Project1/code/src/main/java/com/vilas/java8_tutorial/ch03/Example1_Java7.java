@@ -1,15 +1,15 @@
-package com.shekhargulati.java8_tutorial.ch03;
+package main.java.com.vilas.java8_tutorial.ch03;
 
 
-import com.shekhargulati.java8_tutorial.domain.Task;
-import com.shekhargulati.java8_tutorial.domain.TaskType;
+import main.java.com.vilas.java8_tutorial.domain.Task;
+import main.java.com.vilas.java8_tutorial.domain.TaskType;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static com.shekhargulati.java8_tutorial.utils.DataUtils.getTasks;
+import static main.java.com.vilas.java8_tutorial.utils.DataUtils.getTasks;
 
 
 public class Example1_Java7 {

@@ -1,4 +1,4 @@
-package com.shekhargulati.java8_tutorial.ch01;
+package main.java.com.vilas.java8_tutorial.ch01;
 
 public class App3 implements E, F {
     @Override

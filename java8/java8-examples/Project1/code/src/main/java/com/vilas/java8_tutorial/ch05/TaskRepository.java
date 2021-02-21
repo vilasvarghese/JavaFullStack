@@ -1,8 +1,8 @@
-package com.shekhargulati.java8_tutorial.ch05;
+package main.java.com.vilas.java8_tutorial.ch05;
 
 
 
-import com.shekhargulati.java8_tutorial.ch05.domain.Task;
+import main.java.com.vilas.java8_tutorial.ch05.domain.Task;
 
 import java.util.HashMap;
 import java.util.Map;

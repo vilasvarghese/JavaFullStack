@@ -1,4 +1,4 @@
-package com.shekhargulati.java8_tutorial.ch10;
+package main.java.com.vilas.java8_tutorial.ch10;
 
 import jdk.nashorn.api.scripting.ClassFilter;
 import jdk.nashorn.api.scripting.NashornScriptEngineFactory;
