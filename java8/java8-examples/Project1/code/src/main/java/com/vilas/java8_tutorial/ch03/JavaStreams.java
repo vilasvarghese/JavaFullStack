@@ -42,7 +42,7 @@ public class JavaStreams {
 
 
 		// 5. Stream from Array, sort, filter and print
-		String[] names = {"Al", "Ankit", "Kushal", "Brent", "Sarika", "amanda", "Hans", "Shivika", "Sarah"};
+		String[] names = {"Al", "Ankit", "Kushal", "Brent", "Sarika", "amanda", "Hans", "Vilas", "Sarah"};
 		Arrays.stream(names)	// same as Stream.of(names)
 			.filter(x -> x.startsWith("S"))
 			.sorted()
@@ -59,7 +59,7 @@ public class JavaStreams {
 
 
 		// 7. Stream from List, filter and print
-		List<String> people = Arrays.asList("Al", "Ankit", "Brent", "Sarika", "amanda", "Hans", "Shivika", "Sarah");
+		List<String> people = Arrays.asList("Al", "Ankit", "Brent", "Sarika", "amanda", "Hans", "Vilas", "Sarah");
 		people
 			.stream()
 			.map(String::toLowerCase)

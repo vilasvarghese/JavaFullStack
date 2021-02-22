@@ -1,5 +1,8 @@
 package main.java.com.vilas.java8_tutorial.ch10;
 
+
+//Compile and execute this from the command prompt for it to work.
+
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;

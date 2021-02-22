@@ -12,10 +12,12 @@ Day-1
 	b.	Stream API Introduction
 
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		Project1\ch02
+		Project1\ch03
+		Project1/04-collectors.md
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	c.	Method References
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	vilas\java8_tutorial
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	d.	Default Methods
@@ -24,15 +26,20 @@ https://github.com/vilasvarghese/JavaFullStack/blob/master/java8/java8-examples/
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	e.	Repeating Annotations
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	https://github.com/vilasvarghese/JavaFullStack/blob/master/java8/java8-examples/Project1/12-annotations.md
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	f.	Type Annotations
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		https://github.com/vilasvarghese/JavaFullStack/blob/master/java8/java8-examples/Project1/12-annotations.md
+		ch12
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	g.	Improved Type Inference
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Everything that we learned till now about compiler automatically understanding the type.
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	h.	Method Parameter Reflections
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Day-2
@@ -47,10 +54,30 @@ Day-2
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		c.	HashMap enhancements
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		https://github.com/vilasvarghese/JavaFullStack/blob/master/java8/java8-examples/Project1/06-map.md
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	3.	Java Compact Profiles
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Save space
+	Deploy java with less space along with your application.
+		uname -a
+		java -version
+		du -sk jre directory
+			140+ MB
+
+		
+		Java was monolithic
+		Now it looks much better.
+		Project Jigsaw
+			Move to microservices
+			End Goal: Run a tool which can automatically analyze and provide a reduced set of microservices which is applicable only to your project.
+
+	Steps to generate a java compact profile
+	
+		jrecreate.
+		bin/jrecreate.sh --dest compact1-minimal --profile compact1 -vm minimal
+
+		bin/jrecreate.sh --dest compact1-client --profile compact1 -vm client	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	4.	Internationalization
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,9 +86,11 @@ Day-2
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	6.	Date-Time Package
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	https://github.com/vilasvarghese/JavaFullStack/blob/master/java8/java8-examples/Project1/08-date-time-api.md
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	7.	Scripting
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	D:\PraiseTheLord\HSBGInfotech\Others\vilas\JavaFullStack\java8\java8-examples\Project1\code\src\main\java\com\vilas\java8_tutorial\ch10
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Day-3
@@ -931,3 +960,8 @@ Micro Services Using AWS:
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 Assignment:
 	Lift and shift application developed to AWS. Deploy it following industry best practices.
+
+
+Good references:
+	https://www.youtube.com/watch?v=9Orn0Pwp3YU&list=PLsyeobzWxl7otduRddQWYTQezVul0xIX6&index=13
+	

@@ -120,7 +120,7 @@ Then you can use them as shown below.
 
 ```java
 public static void doSth() {
-    List<@MyAnnotation String> names = Arrays.asList("shekhar");
+    List<@MyAnnotation String> names = Arrays.asList("Vilas");
 }
 ```
 
