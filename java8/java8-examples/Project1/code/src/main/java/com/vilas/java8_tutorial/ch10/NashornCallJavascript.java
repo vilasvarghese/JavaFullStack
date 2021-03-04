@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch10;
+package com.vilas.java8_tutorial.ch10;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

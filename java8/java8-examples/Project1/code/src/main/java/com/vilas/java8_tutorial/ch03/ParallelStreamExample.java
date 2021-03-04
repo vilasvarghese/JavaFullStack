@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch03;
+package com.vilas.java8_tutorial.ch03;
 
 import java.util.List;
 import java.util.Map;

@@ -1,8 +1,8 @@
-package main.java.com.vilas.java8_tutorial.utils;
+package com.vilas.java8_tutorial.utils;
 
 
-import main.java.com.vilas.java8_tutorial.domain.Task;
-import main.java.com.vilas.java8_tutorial.domain.TaskType;
+import com.vilas.java8_tutorial.domain.Task;
+import com.vilas.java8_tutorial.domain.TaskType;
 
 import java.io.IOException;
 import java.nio.file.Files;

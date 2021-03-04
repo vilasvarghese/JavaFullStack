@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch09;
+package com.vilas.java8_tutorial.ch09;
 
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;

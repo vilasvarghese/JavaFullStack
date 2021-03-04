@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch05.domain;
+package com.vilas.java8_tutorial.ch05.domain;
 
 import java.util.Optional;
 

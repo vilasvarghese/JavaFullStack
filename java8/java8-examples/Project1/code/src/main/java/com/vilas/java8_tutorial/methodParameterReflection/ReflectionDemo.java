@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.methodParameterReflection;
+package com.vilas.java8_tutorial.methodParameterReflection;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;

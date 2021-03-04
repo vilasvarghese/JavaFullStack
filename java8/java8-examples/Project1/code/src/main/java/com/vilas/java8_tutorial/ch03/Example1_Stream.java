@@ -1,13 +1,13 @@
-package main.java.com.vilas.java8_tutorial.ch03;
+package com.vilas.java8_tutorial.ch03;
 
 
-import main.java.com.vilas.java8_tutorial.domain.Task;
-import main.java.com.vilas.java8_tutorial.domain.TaskType;
+import com.vilas.java8_tutorial.domain.Task;
+import com.vilas.java8_tutorial.domain.TaskType;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static main.java.com.vilas.java8_tutorial.utils.DataUtils.getTasks;
+import static com.vilas.java8_tutorial.utils.DataUtils.getTasks;
 
 
 public class Example1_Stream {

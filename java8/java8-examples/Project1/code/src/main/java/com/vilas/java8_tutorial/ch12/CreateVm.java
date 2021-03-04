@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch12;
+package com.vilas.java8_tutorial.ch12;
 
 import java.lang.annotation.*;
 

@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.methodreference;
+package com.vilas.java8_tutorial.methodreference;
 
 interface Sayable{  
     void say();  

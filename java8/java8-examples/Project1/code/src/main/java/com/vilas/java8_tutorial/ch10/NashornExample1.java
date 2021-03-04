@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch10;
+package com.vilas.java8_tutorial.ch10;
 
 
 //Compile and execute this from the command prompt for it to work.

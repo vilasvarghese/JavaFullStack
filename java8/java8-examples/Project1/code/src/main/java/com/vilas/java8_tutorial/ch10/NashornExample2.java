@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch10;
+package com.vilas.java8_tutorial.ch10;
 
 import javax.script.*;
 import java.util.AbstractMap.SimpleEntry;
