@@ -1,10 +1,10 @@
-package main.java.com.vilas.java8_tutorial.ch01;
+package com.vilas.java8_tutorial.ch01;
 
 public class App1 implements A {
-    @Override
+    /*@Override
     public void doSth() {
         System.out.println("inside App1");
-    }
+    }*/
 
     public static void main(String[] args) {
         new App1().doSth();

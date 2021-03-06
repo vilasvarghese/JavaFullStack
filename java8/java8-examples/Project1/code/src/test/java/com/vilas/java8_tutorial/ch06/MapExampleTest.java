@@ -1,7 +1,7 @@
-package com.shekhargulati.java8_tutorial.ch06;
+package com.vilas.java8_tutorial.ch06;
 
-import com.shekhargulati.java8_tutorial.domain.Task;
-import com.shekhargulati.java8_tutorial.domain.TaskType;
+import com.vilas.java8_tutorial.domain.Task;
+import com.vilas.java8_tutorial.domain.TaskType;
 import org.junit.Test;
 
 import java.util.Arrays;

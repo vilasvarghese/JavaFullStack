@@ -1,0 +1,23 @@
+
+Eclipse debugging (Advanced options)
+https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php
+
+1. Put breakpoint
+2. Run in debug mode.
+3. Step-in/Step-out/Resume/Return
+4. Inspect - select an expression
+	Right click inspect to see value of the ex
+
+Other ways to debug
+	S.o.p()
+
+Memory Heap
+	
+	https://www.vogella.com/tutorials/EclipseMemoryAnalyzer/article.html
+	
+	shallow size: max. size required for an object
+	retained size: how many objects are created in a particular class
+	
+Summary
+Classes
+	

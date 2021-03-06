@@ -2,6 +2,16 @@
 Day-1
 	1.	Java Programming Language Improvements / Functional Programming
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Before Java 8
+-------------	
+Why can't I define a static method in a Java interface?
+	All methods in an interface are explicitly abstract and hence you cannot define them as static because static methods cannot be abstract.
+	
+Now
+---
+we can define default methods in interface.
+Hence you can have static methods in intefaces.
+
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
 	a.	Lambda Expressions

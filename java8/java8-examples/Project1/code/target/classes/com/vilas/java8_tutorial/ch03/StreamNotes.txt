@@ -1,0 +1,30 @@
+Stream
+	Source
+		Collections, Array etc.
+	intermediate operations
+		zero or more 
+		order matters
+			when you filter
+			performance improvements
+		e.g.
+		filter, 
+		map, 
+		sorted
+		anyMatch
+		distinct
+		findFirst
+		flatMap
+		skip
+	terminal operations
+		Only one allowed and one should be present
+		Entire values
+			forEach, 
+			collect, 
+		Reduce count
+			reduce
+			count
+			max
+			min
+	
+	
+	When to use ParallelStream

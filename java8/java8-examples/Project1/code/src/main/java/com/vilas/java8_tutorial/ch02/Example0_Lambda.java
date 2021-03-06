@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch02;
+package com.vilas.java8_tutorial.ch02;
 
 interface A1{
 	int show(String message);

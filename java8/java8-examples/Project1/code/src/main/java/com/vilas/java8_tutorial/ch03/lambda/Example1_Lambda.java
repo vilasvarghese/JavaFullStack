@@ -34,7 +34,6 @@ public class Example1_Lambda {
          * 3. Multiple lines
          * 4. Type inference
          */
-
         Collections.sort(names, (String first, String second) -> second.length() - first.length());
         System.out.println("names sorted by length(reversed)  >>");
         System.out.println(names);

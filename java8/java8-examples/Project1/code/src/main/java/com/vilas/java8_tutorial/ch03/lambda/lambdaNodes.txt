@@ -123,7 +123,7 @@ If you notice the difference:-
 		as they are intuitive for compiler by interface method definition. 
 		
 2. A new operator "->" called Lambda expression 
-	i.e. it’s the separator between input and output.
+	i.e. "->" the separator between input and output.
 
 -------------------------------------------------------------------------
 (String language) -> {
@@ -209,7 +209,7 @@ Examples of lambda
 3. Another lambda expression with one parameter
 s -> System.out.println("Hi!Lambda Expressions is great."+s);
 
-4. A lambda expression with 2 parameters (Note parantesis is required for 2 or more params)
+4. A lambda expression with 2 parameters (Note parentheses is required for 2 or more params)
 (s1, s2) -> System.out.println("Hi!Lambda Expressions is great." + s1 + s2);
 
 Some of its advantages are enlisted below: 

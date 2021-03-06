@@ -1,0 +1,26 @@
+map
+	intermediate stream operation that transforms each element. 
+	e.g. calculate square, cube, floor, ceil etc.
+	number of elements return would be same as the input
+	Applies its argument, a Function<T, R>, and returns a Stream<R>
+	 
+flatMap
+	List of list can be flattened to a list
+	Stream<List<String>> to a Stream<String>
+	
+reduce
+	accumulates the elements of the stream 
+	Applies BinaryOperator<T> and reduces them to a single value
+	e.g. calculate count/sum/min/max of all elements.
+	
+Collectors
+	related to reduce
+	aggregates elements of a stream. 
+	We can achieve similar results with both, 
+		but the difference between them is more subtle.
+	Reduce 
+		operation creates a new value by combining two values in an immutable way. 
+	Collectors
+		use mutable accumulate objects.
+		
+		

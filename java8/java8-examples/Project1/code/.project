@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>jdk1.8.0_211</name>
+			<type>2</type>
+			<location>C:/Program Files/Java/jdk1.8.0_211</location>
+		</link>
+	</linkedResources>
 </projectDescription>

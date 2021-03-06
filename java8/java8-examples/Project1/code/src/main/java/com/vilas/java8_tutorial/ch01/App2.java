@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.ch01;
+package com.vilas.java8_tutorial.ch01;
 
 public class App2 implements B, D {
     public static void main(String[] args) {

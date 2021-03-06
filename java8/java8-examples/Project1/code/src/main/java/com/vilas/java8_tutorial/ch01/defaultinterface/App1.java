@@ -7,7 +7,7 @@ public class App1 implements A {
     }
 
     public static void main(String[] args) {
-        new App1().doSth();
+    	new App1().doSth();
     }
 }
 

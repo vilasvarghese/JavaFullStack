@@ -1,7 +1,7 @@
-package main.java.com.vilas.java8_tutorial.ch01;
+package com.vilas.java8_tutorial.ch01;
 
 
-class BasicCalculator implements Calculator {
+public class BasicCalculator implements Calculator {
 
     @Override
     public int add(int first, int second) {
@@ -25,4 +25,10 @@ class BasicCalculator implements Calculator {
     public int multiply(int first, int second) {
         return first * second;
     }
+    
+    public static void main(String[] args) {
+    	Calculator c = new BasicCalculator();
+    	c.add(5, 7);
+    }
+   
 }

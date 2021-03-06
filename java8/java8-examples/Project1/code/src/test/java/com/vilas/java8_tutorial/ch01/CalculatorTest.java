@@ -1,4 +1,4 @@
-package com.shekhargulati.java8_tutorial.ch01;
+package com.vilas.java8_tutorial.ch01;
 
 import org.junit.Test;
 
