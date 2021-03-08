@@ -31,7 +31,7 @@ public class JavaStreams {
 		Stream.of("Ava", "Aneri", "Alberto").sorted().findFirst().ifPresent(System.out::println);
 
 		// 5. Stream from Array, filter, sort and print
-		String[] names = { "Al", "Ankit", "Kushal", "Brent", "Sarika", "amanda", "Hans", "Vilas", "Sarah" };
+		String[] names = { "Ali", "Ankit", "Kushal", "Brent", "Sarika", "amanda", "Hans", "Vilas", "Sarah" };
 		Arrays.stream(names) // same as Stream.of(names)
 				.filter(x -> x.startsWith("S")).sorted().forEach(System.out::println);
 

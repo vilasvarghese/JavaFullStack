@@ -20,12 +20,6 @@ public class FlatMapExample {
 		System.out.println("thrice");		
 		outputArray = duplicate(inputArray, 3);
 		Arrays.stream(outputArray).forEach(System.out::println);
-		
-		System.out.println("thrice String");		
-		String[] strArray = {"Vilas", "Sana", "Elishbah", "Sarah", "Hannah"};
-		//List<String> strOutputArray = duplicate (strArray, 2);
-		//strOutputArray.stream().forEach(System.out::println);
-
 	}
 	
 	
@@ -41,26 +35,4 @@ public class FlatMapExample {
         .flatMap(e -> IntStream.generate(() -> e).limit(count))
         .toArray();
 	}
-	
-	/*
-	 *
-	 * Following is getting stuck as we iterate into the elements.
-	public static List<String> duplicate(String[] a, int count){
-		System.out.println("start");
-		Stream<String> stream  = Arrays.stream(a);
-		//print(stream);
-		Stream<String> stream1 = stream.flatMap(e -> Stream.generate(() -> e)).limit(count);
-		print(stream1);
-		List<String> c = stream1.collect(Collectors.toList());
-		return c;
-	}
-
-	private static void print(Stream<String> mystream ) {
-		List<String> c = mystream.collect(Collectors.toList());
-		for (String s : c)
-		{
-			System.out.println(s);
-		}
-	}
-	*/
 }

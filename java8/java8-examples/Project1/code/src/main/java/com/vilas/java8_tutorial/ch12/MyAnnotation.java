@@ -20,7 +20,7 @@ class MyAnnotationUsage<@MyAnnotation T> {
     }
 
     public static void doSth() {
-        List<@MyAnnotation String> names = Arrays.asList("shekhar");
+        List<@MyAnnotation String> names = Arrays.asList("vilas");
     }
 
 }

@@ -16,4 +16,28 @@ Write the following methods that return a lambda expression performing a specifi
 		true if a number is a palindrome or 
 		false if it is not.
 		
+4. Design as many implementation of Functional interfaces as you can.
+	Reference:
+		ch03.lambdaExample3_Functionalnterfaces.java
 		
+5. Find all string starts with a and is 3 character long
+		Do it using stream.
+		
+6. Print all the even numbers in a list - 
+	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
+
+7. Print sum of integers in a list	- IntStream.range(1, 10)
+   Print distinct numbers in a list - 
+	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
+   Print square of all numbers in a list
+	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
+   Print only the even numbers in a list
+	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
+   Print odd numbers sorted in the list
+	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
+	
+8. Print the courses sorted by the lenght of the course name.
+
+9. Print an Integer stream
+
+10. Print an Integer stream skipping just one element 
