@@ -1,4 +1,4 @@
-package com.vilas.java8_tutorial.ch04.stream;
+	package com.vilas.java8_tutorial.ch04.stream;
 
 import java.util.List;
 import java.util.Map;
