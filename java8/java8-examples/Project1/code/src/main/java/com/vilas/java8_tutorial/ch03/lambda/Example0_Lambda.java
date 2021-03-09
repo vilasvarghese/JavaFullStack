@@ -1,5 +1,6 @@
 package com.vilas.java8_tutorial.ch03.lambda;
 
+@FunctionalInterface
 interface A1{
 	int show(String message);
 }

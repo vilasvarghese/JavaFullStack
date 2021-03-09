@@ -20,7 +20,7 @@ import java.util.function.BinaryOperator;
  * 
  * 
  * java.util.function package provides a set of re-usable common functional
- * interfaces and their corresponding lambda we can be use it directly instead
+ * interfaces and their corresponding lambda we can use it directly instead
  * of creating brand new functional interfaces.
  * 
  * For example, when we need to check for a condition and return a boolean value
@@ -38,6 +38,22 @@ import java.util.function.BinaryOperator;
  * The rest of the functional interfaces are built on top of these.
  *  
  * */
+
+class Employee{
+	private String name;
+	private int sal;
+	public Employee(String name, int sal) {
+		super();
+		this.name = name;
+		this.sal = sal;
+	}
+	
+	public String toString() {
+		return name +", "+sal;
+	}
+	
+}
+
 public class Example3_Functionalnterfaces {
 
 	public static void main(String[] args) {
@@ -59,6 +75,9 @@ public class Example3_Functionalnterfaces {
 		Consumer<Integer> printer = message -> System.out.print(message);
 		list.forEach(printer);
 		System.out.println();
+		
+		Consumer<Employee> empConsumer = emp -> System.out.println(emp);
+		empConsumer.accept(new Employee("Vilas", 600000));
 
 		/* 2. BiConsumer 
 		 ******* 	Can consume two values 

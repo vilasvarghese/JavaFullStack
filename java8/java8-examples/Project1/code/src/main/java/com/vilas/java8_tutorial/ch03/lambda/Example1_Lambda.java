@@ -29,6 +29,10 @@ public class Example1_Lambda {
                 return o1.length() - o2.length();
             }
         });
+
+        Collections.sort(names, (String o1, String o2) -> {return o1.length() - o2.length();});
+
+        
         System.out.println("names sorted by length  >>");
         System.out.println(names);
         System.out.println();
