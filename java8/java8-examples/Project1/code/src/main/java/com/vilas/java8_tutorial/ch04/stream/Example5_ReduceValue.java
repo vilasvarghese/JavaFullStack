@@ -2,6 +2,7 @@ package com.vilas.java8_tutorial.ch04.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 /*
  * Reduce 
@@ -28,7 +29,7 @@ public class Example5_ReduceValue {
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 		int result = numbers
 		  .stream()
-		  .reduce(0, (subtotal, element) -> subtotal + element);
+		  .reduce(0, Math::subtractExact);
 		
 		//Identity: 0
 		//Accumulator: (subtotal, element) - function that takes 2 parameters

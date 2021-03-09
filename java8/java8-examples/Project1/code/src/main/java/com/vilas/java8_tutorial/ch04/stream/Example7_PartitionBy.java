@@ -33,18 +33,20 @@ public class Example7_PartitionBy {
 		
 		Map<String, List<Employee>> employeesByCity =
 				empList.stream().collect(Collectors.groupingBy(Employee::getCity));
+		
 
 		System.out.println(employeesByCity);
 		
 		Map<String, Long> numEmployeesByCity =
 				empList.stream().collect(Collectors.groupingBy(Employee::getCity, Collectors.counting()));
 		System.out.println(numEmployeesByCity);
-		
+
+
 		Map<String, Double> avgSalesByCity =
 				empList.stream().collect(Collectors.groupingBy(Employee::getCity,
 						Collectors.averagingInt(Employee::getSalesCount)));
 		System.out.println(avgSalesByCity);
-	
+
 		//Partition By
 		/*
 		Partitioning 
@@ -63,6 +65,10 @@ public class Example7_PartitionBy {
 				empList.stream().collect(Collectors.partitioningBy(e -> e.getSalesCount() > 500,
 						Collectors.groupingBy(Employee::getCity, Collectors.counting())));
 		System.out.println(partitioned1);
+	
+		if (1==1) {
+			return;
+		}
 	}
 }
 

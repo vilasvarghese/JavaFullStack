@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 //Similar to group by in sql
@@ -56,8 +57,8 @@ public class Example6_GroupBy {
                 new Item("apple", 20, 9)
         );
 
-        Map<String, Long> counting = items.stream().collect(
-                Collectors.groupingBy(Item::getName, Collectors.counting()));
+        Map<String, Long> counting = items.stream().collect(Collectors.groupingBy(Item::getName, Collectors.counting()));
+        
         System.out.println(counting);
 
         Map<String, Integer> sum = items.stream().collect(
@@ -65,6 +66,7 @@ public class Example6_GroupBy {
         
         System.out.println(sum);
         
+
         //group by price
         Map<Integer, List<Item>> groupByPriceMap = 
             items.stream().collect(Collectors.groupingBy(Item::getCost));
@@ -81,12 +83,6 @@ public class Example6_GroupBy {
 
         System.out.println(result);
     }
-    
-    public static void groupBy3() {
-    	
-    }
-    
-    
 }
 
 class Item {

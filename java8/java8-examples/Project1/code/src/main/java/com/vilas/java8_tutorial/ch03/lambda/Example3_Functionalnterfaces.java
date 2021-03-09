@@ -40,8 +40,8 @@ import java.util.function.BinaryOperator;
  * */
 
 class Employee{
-	private String name;
-	private int sal;
+	public String name;
+	public int sal;
 	public Employee(String name, int sal) {
 		super();
 		this.name = name;
@@ -54,9 +54,20 @@ class Employee{
 	
 }
 
+class MyConsumer{
+	public <T> void printSomeRandomStuff(Supplier<T> s) {
+		System.out.println(s.get());
+	}
+}
+
 public class Example3_Functionalnterfaces {
 
 	public static void main(String[] args) {
+		
+		MyConsumer m10 = new MyConsumer();
+		m10.printSomeRandomStuff(() -> new Random().nextInt(1000));
+		m10.printSomeRandomStuff(()-> new Random().nextFloat());
+		
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 		Map<String, String> empMap = new HashMap<String, String>() {
 			{
@@ -74,10 +85,11 @@ public class Example3_Functionalnterfaces {
 
 		Consumer<Integer> printer = message -> System.out.print(message);
 		list.forEach(printer);
-		System.out.println();
 		
 		Consumer<Employee> empConsumer = emp -> System.out.println(emp);
 		empConsumer.accept(new Employee("Vilas", 600000));
+		
+
 
 		/* 2. BiConsumer 
 		 ******* 	Can consume two values 
@@ -86,7 +98,7 @@ public class Example3_Functionalnterfaces {
 		*/
 		BiConsumer<? super String, ? super String> bic = (k, v) -> System.out.print(k + "-> " + v + ", ");
 		empMap.forEach(bic);
-		System.out.println();
+
 
 		/*
 		 * 3. Supplier Can supply some value
@@ -107,6 +119,8 @@ public class Example3_Functionalnterfaces {
 		Function<String, Integer> func = s1 -> s1.length();//returns the length of the string
 		System.out.println (func.apply("Vilas"));
 		
+		Function<Employee, Integer> empFunction = emp -> emp.name.length();
+		
 		/*
 		 * 5. BiFunction
 		 ******* 	Takes two input and returns an output
@@ -115,7 +129,7 @@ public class Example3_Functionalnterfaces {
 		 ********	Applies the function/lambda on both the input
 		 */
 		
-		BiFunction<String, String, String> bif = (t,u) -> t +" "+ u ;
+		BiFunction<String, String, Integer> bif = (t,u) -> t.length() +u.length();
 		System.out.println(bif.apply("Vilas", "Varghese"));
 		
 		/*
@@ -128,7 +142,7 @@ public class Example3_Functionalnterfaces {
 		 */
 		
 		Predicate<String> predicate = s2 -> s2.length() > 5;
-		System.out.println(predicate.test("Vilas"));
+		System.out.println(predicate.test("Vilas varghese"));
 		
 		/*
 		 * 7. BiPredicate
@@ -139,6 +153,7 @@ public class Example3_Functionalnterfaces {
 		 ********	Execute function/lambda and return boolean
 		 */
 		BiPredicate<String, Integer> bip = (s3,i) -> s3.length() == i;
+		BiPredicate<String, Character> bip2 = (s31, c) -> s31.indexOf(c) > 0;
 		System.out.println(bip.test("Vilas",5));
 		
 		/*
