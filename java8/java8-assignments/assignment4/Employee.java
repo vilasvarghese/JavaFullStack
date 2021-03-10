@@ -63,6 +63,7 @@ public class Employee {
 	}
 
 	static int compareBySal(Employee e1, Employee e2) {
-		return  e1.getSalary() != e2.getSalary() ? (e1.getSalary() < e2.getSalary() ? -1 : 1) : 0;
+		long l = e1.getSalary() - e2.getSalary();
+		return  (int)l;
 	}
 }

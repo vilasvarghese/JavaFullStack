@@ -3,7 +3,7 @@ package assignment3;
 public class MyClassWithLambda {
 
 	public static void main(String[] args) {
-		String line = "Hello vilas! Welcome to Java8 Assignments in Topgear.";
+		String line = "Hello vilas! Welcome to Java8 Assignments.";
 		WordCount wordCount = (String sentence) -> {
 			if (sentence == null) {
 				return 0;
