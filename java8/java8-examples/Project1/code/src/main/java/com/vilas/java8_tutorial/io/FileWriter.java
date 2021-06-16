@@ -1,4 +1,4 @@
-package main.java.com.vilas.java8_tutorial.io;
+package com.vilas.java8_tutorial.io;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;

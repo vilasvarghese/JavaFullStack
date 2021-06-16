@@ -1,4 +1,4 @@
-package com.vilas.java8_tutorial.ch10;
+package com.vilas.java8_tutorial.ch10.nashorn;
 
 
 //Compile and execute this from the command prompt for it to work.

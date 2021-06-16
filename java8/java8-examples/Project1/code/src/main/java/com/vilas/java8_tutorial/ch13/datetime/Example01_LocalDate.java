@@ -13,13 +13,10 @@ public class Example01_LocalDate {
     System.out.println("Tommorow date: "+tomorrow);  
   
     //yyyy/mm/dd
-    LocalDate date1 = LocalDate.of(2017, 1, 13);  
+    LocalDate date1 = LocalDate.of(2017, 3, 1); //yyyy, mm, dd 
+    System.out.println(date1.minusDays(1));
     System.out.println(date1.isLeapYear());  
     LocalDate date2 = LocalDate.of(2016, 9, 23);  
-    System.out.println(date2.isLeapYear());  
-  
-    
-  }  
-  
-  
+    System.out.println(date2.isLeapYear());
+  }
 }  

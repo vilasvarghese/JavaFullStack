@@ -20,7 +20,7 @@ Write the following methods that return a lambda expression performing a specifi
 	Reference:
 		ch03.lambdaExample3_Functionalnterfaces.java
 		
-5. Find all string starts with a and is 3 character long
+5. Find all string starts with A and is 3 character long
 		Do it using stream.
 		
 6. Print all the even numbers in a list - 
@@ -32,7 +32,7 @@ Write the following methods that return a lambda expression performing a specifi
    Print square of all numbers in a list
 	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
    Print only the even numbers in a list
-	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
+	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);	
    Print odd numbers sorted in the list
 	List<Integer> numbers = Arrays.asList(12, 9, 13, 4, 6, 2, 4, 12, 15);
 	

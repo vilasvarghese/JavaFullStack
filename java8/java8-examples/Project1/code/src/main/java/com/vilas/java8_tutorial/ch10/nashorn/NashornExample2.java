@@ -1,4 +1,4 @@
-package com.vilas.java8_tutorial.ch10;
+package com.vilas.java8_tutorial.ch10.nashorn;
 
 import javax.script.*;
 import java.util.AbstractMap.SimpleEntry;

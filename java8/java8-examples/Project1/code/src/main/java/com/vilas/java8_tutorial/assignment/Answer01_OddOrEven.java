@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 		true if a number is odd or  
 		false if it is even.
 */
-public class Answer01_OddOrEvent {
+public class Answer01_OddOrEven {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World");

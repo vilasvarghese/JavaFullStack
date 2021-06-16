@@ -1,0 +1,18 @@
+HashMap performance Improvement Changes in Java 8
+JDK 8 has a new strategy for dealing with Hash collisions. 
+Before Java 8, 
+	the performance of the HashMap can deteriorate with hash collision.
+	
+	While using large number of elements we can end up having lot of data in the same bucket.
+															---------------------------------
+	HashMap.get()
+	HashMap.lookup 
+	etc.
+		negative impact due to hash collisions. 
+	Jave used to place such data in linked list. 
+	Retrieval time of elements from HashMap can increase from O(1) to O(n). 
+	
+From Java 8 has 
+	Java starts using Line
+To address this issue, Java 8 hash elements use balanced trees instead of linked lists after a certain threshold is reached. Which means HashMap starts with storing Entry objects in a linked list but after the number of items in a hash becomes larger than a certain threshold. The hash will change from using a linked list to a balanced tree.
+Above changes ensure the performance of O(log(n)) in worst case scenarios and O(1) with proper hashCode().

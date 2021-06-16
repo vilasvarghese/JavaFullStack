@@ -5,6 +5,7 @@ import java.util.Optional;
 public class Task {
     private final String title;
     private final Optional<User> assignedTo;
+    private User myAssignedTo;
     private final String id;
 
     public Task(String id, String title) {

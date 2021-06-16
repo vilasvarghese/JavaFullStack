@@ -38,12 +38,14 @@ public class TaskRepository {
     }
     
     public static void main(String[] args) {
-    	 String name = "vilas";
-    	 Optional<String> opt = Optional.ofNullable(name);
+    	
+    	String s = new String();
+
+    	 Optional<String> opt = Optional.ofNullable("vilas");
     	 System.out.println(opt);
     	 Optional<String> opt1 = Optional.ofNullable(null);
     	 System.out.println(opt1);
-    	 
+
     	 loadData();
     	 System.out.println(find1("vilas"));
     	 System.out.println(find("1"));

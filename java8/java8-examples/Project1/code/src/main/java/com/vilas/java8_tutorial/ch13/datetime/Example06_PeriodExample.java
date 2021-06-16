@@ -27,9 +27,9 @@ public class Example06_PeriodExample {
         // check period between dates
         Period period = Period.between(oldDate, newDate);
 
+        
         System.out.print(period.getYears() + " years,");
         System.out.print(period.getMonths() + " months,");
         System.out.print(period.getDays() + " days");
-
     }
 }

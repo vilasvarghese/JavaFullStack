@@ -993,30 +993,101 @@ Identity Access Management
 		Assume permission basics
 		
 	
-	
-	Georgrphy
+
+
+Amazon EC2 is hosted in multiple locations world-wide. 
+These locations are categorized as 
+	Regions, 
+	Availability Zones, 
+	Local Zones, 
+	AWS Outposts, 
+	and Wavelength Zones. 
+
+Reference:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+		
 	Regions
+		Each Region is a separate geographic area
 		Geographical location
 		one or more isolated locations
 		Consoles are region scoped
 			(except IAM, S3 and Route53)
+		When you work with an instance using the command line interface or API actions, you must specify its Regional endpoint.
+
+
+-----------------------------
+aws ec2 describe-regions
+aws ec2 describe-regions --all-regions
+
+Use the get-regions command as follows to describe the name of the specified Region.
+
+aws lightsail get-regions --query "regions[?name=='region-name'].displayName" --output text
+aws lightsail get-regions --query "regions[?name=='us-east-2'].displayName" --output text
+
+-----------------------------
+
+
 	Availability zones
+		Multiple, isolated locations within each Region.
 		Physical data center in a region
 		Each AZ are isolated 
+		Can Launch instances in an Availability Zone
+			While creating - Optionally specify the AZ.
+		Can Migrate an instance to another Availability Zone
+		
+-----------------------------------------
+aws ec2 describe-availability-zones --region region-name
+aws ec2 describe-availability-zones --all-availability-zones
+-----------------------------------------
+		
+
+
+	Local Zones 
+		Part of the Availability Zones.
+		Provide ability to place resources, 
+			compute and 
+			storage
+		Local Zones have their own connections to the internet 
+		Support AWS Direct Connect
+			resources created in a Local Zone can serve local users with low-latency communications.
+		A Local Zone is represented by a Region code followed by an identifier that indicates the location, for example, us-west-2-lax-1a.
+		To use a Local Zone, you must first enable it
+
+---------------------------------
+Use the describe-availability-zones command as follows to describe the Local Zones in the specified Region.
+
+aws ec2 describe-availability-zones --region region-name
+aws ec2 describe-availability-zones --all-availability-zones
+-----------------------------------------
+	AWS Outposts 
+		Brings native AWS services, 
+			infrastructure, 
+			operating models 
+		to 
+			virtually any data center, 
+			co-location space
+			on-premises facility.
+
+	Wavelength Zones 
+		Allow developers to build applications 
+			that deliver ultra-low latencies to 5G devices and end users. 
+		Wavelength deploys standard 
+			AWS compute and 
+			storage services 
+		to 
+			the edge of telecommunication carriers' 5G networks.
 		
 	Host applications
-		Across AZ and regions closer to custer.
-		Back up to geographically.
+		Across AZ and regions closer to customer.
+		Back up geographically.
 		
-	
 	
 	AWS IAM (Identity and access management)
 		enables to access AWS services and resources securely.
-		
-		
 		IAM users
 			Has userid and pwd
 			Can access aws console
+
 	Types of users	
 		Root users
 		Administrator user
@@ -1028,6 +1099,8 @@ Identity Access Management
 			makes it easier to manage permission for user attached.
 	Permissions/Policies 
 		Policies: Attach to user and group. 	
+		
+		
 		
 	Login to aws
 		Regions
@@ -2692,7 +2765,7 @@ Micro Services Using AWS:
 	Features of Microservices Architecture
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Why MS
+	Why Micro Services
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Advantages of Microservices Architecture
@@ -2703,12 +2776,15 @@ Micro Services Using AWS:
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	AWS options for Micro Services
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	https://www.missioncloud.com/blog/how-to-build-microservices-on-aws
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	AWS option for Serverless Computing’s
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Simple Microservices Architecture on AWS
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	https://relevant.software/blog/microservices-on-aws/
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	User Interface
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2730,6 +2806,15 @@ Micro Services Using AWS:
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Deploying Lambda-Based Applications
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	AWS Lambda is a compute service that lets you run code without provisioning or managing servers. Lambda runs your code only when needed and scales automatically, from a few requests per day to thousands per second. You pay only for the compute time that you consume—there is no charge when your code is not running. With Lambda, you can run code for virtually any type of application or backend service, all with zero administration. Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. All you need to do is supply your code in one of the languages that Lambda supports.
+
+	You can use Lambda to run your code in response to events, such as changes to data in an Amazon Simple Storage Service (Amazon S3) bucket or an Amazon DynamoDB table; to run your code in response to HTTP requests using Amazon API Gateway; or to invoke your code using API calls made using AWS SDKs. With these capabilities, you can use Lambda to build data processing triggers for AWS services such as Amazon S3 and DynamoDB, process streaming data stored in Amazon Kinesis, or create your own backend that operates at AWS scale, performance, and security.
+
+	You can also build serverless applications composed of functions that are triggered by events, and automatically deploy them using AWS CodePipeline and AWS CodeBuild. 
+
+
+	
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Distributed Systems Components
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2749,10 +2834,6 @@ Micro Services Using AWS:
 	Chattiness
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	API Management
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	API Gateway
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 Assignment:

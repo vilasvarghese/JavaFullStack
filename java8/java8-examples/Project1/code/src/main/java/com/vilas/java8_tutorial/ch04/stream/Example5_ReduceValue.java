@@ -2,6 +2,7 @@ package com.vilas.java8_tutorial.ch04.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.stream.IntStream;
 
 /*
@@ -23,14 +24,25 @@ import java.util.stream.IntStream;
 *
  */
 
+
+
 public class Example5_ReduceValue {
 
 	public static void main(String[] args) {
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 		int result = numbers
 		  .stream()
-		  .reduce(0, Math::subtractExact);
+		  .reduce(0, (i,j) -> i+j);
+		  //.reduce(0, Math::subtractExact);
 		
+		List<String> s = Arrays.asList("Vilas", "Swapna", "Mohammad", "Nagendra", "Noor");
+		
+		String s1 = s.stream().reduce("", (i, j)-> i+", "+j);
+		System.out.println("{"+s1.substring(1)+"}");
+		//two
+		//first: result of previous operation
+		//second: current element
+				
 		//Identity: 0
 		//Accumulator: (subtotal, element) - function that takes 2 parameters
 		//Combiner: definition of the logic of how to combine.
